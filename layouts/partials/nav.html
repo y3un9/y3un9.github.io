@@ -1,0 +1,16 @@
+<!-- <a href="{{ "/" | relURL }}">Home</a>
+{{ range .Site.Menus.main }}
+<a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+{{ with .Site.GetPage "/blog" }}
+<a href="{{ "/blog" | relURL }}">Blog</a>
+{{ end }} -->
+
+{{ $current := . }}
+{{ range .Site.Menus.nav }}
+  {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+  {{ $active = or $active (eq .Name $current.Title) }}
+  {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog")) }}
+  {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+  <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+{{ end }}
