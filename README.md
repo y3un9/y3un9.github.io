@@ -1,2 +1,3 @@
 # y3un9.github.io
-SubwaySamurai's Blog
+
+Personal blog, named SubwaySamurai
