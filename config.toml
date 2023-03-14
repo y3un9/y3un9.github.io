@@ -22,12 +22,12 @@ enableEmoji = true
     url = "/projects"
     weight = 3
   [[menu.nav]]
-    name = "Reads"
-    url = "/reads"
-    weight = 4
-  [[menu.nav]]
     name = "Timeline"
     url = "/timeline"
+    weight = 4
+  [[menu.nav]]
+    name = "Reads"
+    url = "/reads"
     weight = 5
 #  [[menu.nav]]
 #    name = "Podcast"
