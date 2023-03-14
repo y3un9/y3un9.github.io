@@ -22,13 +22,17 @@ enableEmoji = true
     url = "/projects"
     weight = 3
   [[menu.nav]]
-    name = "Timeline"
-    url = "/timeline"
+    name = "Reads"
+    url = "/reads"
     weight = 4
   [[menu.nav]]
-    name = "Podcast"
-    url = "/podcast"
+    name = "Timeline"
+    url = "/timeline"
     weight = 5
+#  [[menu.nav]]
+#    name = "Podcast"
+#    url = "/podcast"
+#    weight = 6
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
